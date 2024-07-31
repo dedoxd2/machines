@@ -1,0 +1,17 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Wed Jul 24 00:18:02 2024
+URL_BASE: http://10.10.11.25/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Fine tunning of NOT_FOUND detection
+
+-----------------
+
+*** Generating Wordlist...                                                                               GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.11.25/ ----
+*** Calculating NOT_FOUND code...                                                                                                                                                                                                                                                                                                                            --> Testing: http://10.10.11.25/.bash_history                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.bashrc                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.cache                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.config                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.cvs                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.cvsignore                                                                                                                                                                                                                                             --> Testing: http://10.10.11.25/.forward
