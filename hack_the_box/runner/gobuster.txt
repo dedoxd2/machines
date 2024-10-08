@@ -1,0 +1,40 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:             http://runner.htb
+[+] Method:          GET
+[+] Threads:         400
+[+] Wordlist:        /home/dedoxd2/Desktop/secLists/Discovery/DNS/namelist.txt
+[+] User Agent:      gobuster/3.6
+[+] Timeout:         10s
+[+] Append Domain:   false
+===============================================================
+Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: http://mobility Status: 400 [Size: 166]
+Found: http://enquetes Status: 400 [Size: 166]
+Found: http://partner Status: 400 [Size: 166]
+Found: https://archives Status: 400 [Size: 166]
+Found: https://collaboratif Status: 400 [Size: 166]
+Found: https://assurance Status: 400 [Size: 166]
+Found: https://conseil Status: 400 [Size: 166]
+Found: https://ee Status: 400 [Size: 166]
+Found: https://idees Status: 400 [Size: 166]
+Found: https://mobility Status: 400 [Size: 166]
+Found: https://nomade Status: 400 [Size: 166]
+Found: https://lvelizy Status: 400 [Size: 166]
+Found: https://escale Status: 400 [Size: 166]
+Found: https://igc Status: 400 [Size: 166]
+Found: https://pam Status: 400 [Size: 166]
+Found: https://partner Status: 400 [Size: 166]
+Found: https://protocoltraining Status: 400 [Size: 166]
+Found: https://sft Status: 400 [Size: 166]
+Found: https://scm Status: 400 [Size: 166]
+Found: https://www Status: 400 [Size: 166]
+Found: https://webpam Status: 400 [Size: 166]
+Progress: 151265 / 151266 (100.00%)
+===============================================================
+Finished
+===============================================================
+

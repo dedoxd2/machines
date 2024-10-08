@@ -1,0 +1,34 @@
+dirb http://10.10.204.20/ -f 
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Sat Aug 24 05:34:44 2024
+URL_BASE: http://10.10.204.20/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Fine tunning of NOT_FOUND detection
+
+-----------------
+
+                                                                    GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.204.20/ ----
+                                                                                                                                                                                                                                                                                                                                        + http://10.10.204.20/index.html (CODE:200|SIZE:316)               
+                                                                                                                                                                                                                                                                                                                                    + http://10.10.204.20/robots.txt (CODE:200|SIZE:5)                 
+==> DIRECTORY: http://10.10.204.20/secret/                                     
++ http://10.10.204.20/server-status (CODE:403|SIZE:277)            
+==> DIRECTORY: http://10.10.204.20/uploads/                                    
+                                                                   
+---- Entering directory: http://10.10.204.20/secret/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                   
+---- Entering directory: http://10.10.204.20/uploads/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                               
+-----------------
+END_TIME: Sat Aug 24 06:07:15 2024
+DOWNLOADED: 4612 - FOUND: 3

